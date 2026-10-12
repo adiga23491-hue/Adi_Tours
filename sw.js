@@ -1,4 +1,4 @@
-const CACHE='adi-thailand-v1';
+const CACHE='adi-thailand-v2-flat';
 self.addEventListener('install',()=>self.skipWaiting());
 self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));
 self.addEventListener('message',e=>{if(e.data.type!=='CACHE_ALL')return;e.waitUntil((async()=>{const c=await caches.open(CACHE),files=[...new Set(e.data.files)];let done=0;try{for(const file of files){const u=new URL(file,self.registration.scope);const r=await fetch(u,{cache:'reload'});if(!r.ok)throw Error(file);await c.put(u,r);done++;e.source?.postMessage({type:'CACHE_PROGRESS',done,total:files.length});}e.source?.postMessage({type:'CACHE_COMPLETE'});}catch{e.source?.postMessage({type:'CACHE_ERROR'});}})());});

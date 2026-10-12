@@ -1,1 +1,61 @@
-{"etihad-booking": {"pdf": "assets/docs/etihad-booking.pdf", "images": ["assets/previews/etihad-booking-1.jpg", "assets/previews/etihad-booking-2.jpg", "assets/previews/etihad-booking-3.jpg", "assets/previews/etihad-booking-4.jpg"]}, "etihad-michal": {"pdf": "assets/docs/etihad-michal.pdf", "images": ["assets/previews/etihad-michal-1.jpg", "assets/previews/etihad-michal-2.jpg"]}, "etihad-eden": {"pdf": "assets/docs/etihad-eden.pdf", "images": ["assets/previews/etihad-eden-1.jpg", "assets/previews/etihad-eden-2.jpg"]}, "cape-house": {"pdf": "assets/docs/cape-house.pdf", "images": ["assets/previews/cape-house-1.jpg", "assets/previews/cape-house-2.jpg", "assets/previews/cape-house-3.jpg", "assets/previews/cape-house-4.jpg", "assets/previews/cape-house-5.jpg"]}, "bangkok-michal": {"pdf": "assets/docs/bangkok-michal.pdf", "images": ["assets/previews/bangkok-michal-1.jpg"]}, "bangkok-eden": {"pdf": "assets/docs/bangkok-eden.pdf", "images": ["assets/previews/bangkok-eden-1.jpg"]}, "cocohut": {"pdf": "assets/docs/cocohut.pdf", "images": ["assets/previews/cocohut-1.jpg"]}, "sala": {"pdf": "assets/docs/sala.pdf", "images": ["assets/previews/sala-1.jpg", "assets/previews/sala-2.jpg", "assets/previews/sala-3.jpg"]}}
+{
+  "etihad-booking": {
+    "pdf": "etihad-booking.pdf",
+    "images": [
+      "etihad-booking-1.jpg",
+      "etihad-booking-2.jpg",
+      "etihad-booking-3.jpg",
+      "etihad-booking-4.jpg"
+    ]
+  },
+  "etihad-michal": {
+    "pdf": "etihad-michal.pdf",
+    "images": [
+      "etihad-michal-1.jpg",
+      "etihad-michal-2.jpg"
+    ]
+  },
+  "etihad-eden": {
+    "pdf": "etihad-eden.pdf",
+    "images": [
+      "etihad-eden-1.jpg",
+      "etihad-eden-2.jpg"
+    ]
+  },
+  "cape-house": {
+    "pdf": "cape-house.pdf",
+    "images": [
+      "cape-house-1.jpg",
+      "cape-house-2.jpg",
+      "cape-house-3.jpg",
+      "cape-house-4.jpg",
+      "cape-house-5.jpg"
+    ]
+  },
+  "bangkok-michal": {
+    "pdf": "bangkok-michal.pdf",
+    "images": [
+      "bangkok-michal-1.jpg"
+    ]
+  },
+  "bangkok-eden": {
+    "pdf": "bangkok-eden.pdf",
+    "images": [
+      "bangkok-eden-1.jpg"
+    ]
+  },
+  "cocohut": {
+    "pdf": "cocohut.pdf",
+    "images": [
+      "cocohut-1.jpg"
+    ]
+  },
+  "sala": {
+    "pdf": "sala.pdf",
+    "images": [
+      "sala-1.jpg",
+      "sala-2.jpg",
+      "sala-3.jpg"
+    ]
+  }
+}
