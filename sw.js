@@ -1,0 +1,5 @@
+const CACHE='adi-thailand-v1';
+self.addEventListener('install',()=>self.skipWaiting());
+self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));
+self.addEventListener('message',e=>{if(e.data.type!=='CACHE_ALL')return;e.waitUntil((async()=>{const c=await caches.open(CACHE),files=[...new Set(e.data.files)];let done=0;try{for(const file of files){const u=new URL(file,self.registration.scope);const r=await fetch(u,{cache:'reload'});if(!r.ok)throw Error(file);await c.put(u,r);done++;e.source?.postMessage({type:'CACHE_PROGRESS',done,total:files.length});}e.source?.postMessage({type:'CACHE_COMPLETE'});}catch{e.source?.postMessage({type:'CACHE_ERROR'});}})());});
+self.addEventListener('fetch',e=>{if(e.request.method!=='GET'||new URL(e.request.url).origin!==self.location.origin)return;e.respondWith((async()=>{const cached=await caches.match(e.request);if(e.request.mode==='navigate'){try{return await fetch(e.request);}catch{return cached||await caches.match(new URL('index.html',self.registration.scope));}}return cached||fetch(e.request);})());});
